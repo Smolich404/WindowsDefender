@@ -19,11 +19,11 @@ if errorlevel == 2 goto :Disable
 if errorlevel == 1 goto :Enable
 
 :Enable
-@start /b "Revision - TrustedInstaller" "%~dp0bin\NSudoLG.exe" -U:T -P:E "%~dp0bin\Enable_Windows_Defender.bat"
+@start /b "Opline - TrustedInstaller" "%~dp0bin\NSudoLG.exe" -U:T -P:E "%~dp0bin\Enable_Windows_Defender.bat"
 goto :EOF
 
 :Disable
-@start /b "Revision - TrustedInstaller" "%~dp0bin\NSudoLG.exe" -U:T -P:E "%~dp0bin\Disable_Windows_Defender.bat"
+@start /b "Opline - TrustedInstaller" "%~dp0bin\NSudoLG.exe" -U:T -P:E "%~dp0bin\Disable_Windows_Defender.bat"
 goto :EOF
 
 :EOF
