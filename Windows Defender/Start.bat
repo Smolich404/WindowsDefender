@@ -1,6 +1,6 @@
 @echo off
 set "version=0.1"
-title Revision - Updates
+title Windows Defender
 goto :Start
 
 :Start
