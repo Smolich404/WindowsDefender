@@ -11,4 +11,9 @@ reg add "HKLM\SYSTEM\ControlSet001\Services\WinDefend" /v "Start" /t REG_DWORD /
 ::System Guard
 reg add "HKLM\SYSTEM\ControlSet001\Services\SgrmAgent" /v "Start" /t REG_DWORD /d "0" /f
 reg add "HKLM\SYSTEM\ControlSet001\Services\SgrmBroker" /v "Start" /t REG_DWORD /d "2" /f
+::
+reg delete "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Associations" /f
+reg delete "HKLM\Software\Policies\Microsoft\Windows Defender\SmartScreen" /f
+reg delete "HKLM\Software\Policies\Microsoft\Windows Defender\Signature Updates" /f
 echo Windows Defender has enabled sucessfully! Please restart your PC.
+pause
