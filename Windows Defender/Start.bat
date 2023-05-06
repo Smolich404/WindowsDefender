@@ -22,11 +22,11 @@ if errorlevel == 1 goto :EnableWU
 exit
 
 :EnableWU
-@start /b "Opline - Enable WinDefend - TrustedInstaller" "%~dp0bin\NSudoLG.exe" -U:T -P:E "%~dp0bin\Enable_Windows_Defender.bat"
+@start /b "" "%~dp0bin\MinSudo.exe" --NoLogo --TrustedInstaller "%~dp0bin\Enable_Windows_Defender.bat"
 goto :EOF
 
 :DisableWU
-@start /b "Opline - Disable WinDefend - TrustedInstaller" "%~dp0bin\NSudoLG.exe" -U:T -P:E "%~dp0bin\Disable_Windows_Defender.bat"
+@start /b "" "%~dp0bin\MinSudo.exe" --NoLogo --TrustedInstaller "%~dp0bin\Disable_Windows_Defender.bat"
 goto :EOF
 
 :EOF
