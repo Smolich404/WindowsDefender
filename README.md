@@ -1,3 +1,2 @@
 # Windows Defender
-Enable / Disable Windows Defender
-With NSudoLG
+Enable / Disable Windows Defender With Permissions TrustedInstaller
